@@ -1,4 +1,4 @@
-import pymupdf # import PyMuPDF
+import pymupdf
 import json
 
 # Load configuration from config.json
@@ -12,7 +12,6 @@ page = doc[number]  # page number 0-based
 # Extract replacements from config
 disliked_list = [item["find"] for item in config["replacements"]]
 better_list = [item["replace"] for item in config["replacements"]]
-# hits = page.search_for(disliked)  # list of rectangles where to replace
 
 # search the text to be replaced
 for index, disliked in enumerate(disliked_list):
@@ -23,16 +22,16 @@ for index, disliked in enumerate(disliked_list):
         rect.y1 += config["redaction"]["adjust_y1"]  # make rectangle a bit taller
 
         page.add_redact_annot(rect,
-        align=pymupdf.TEXT_ALIGN_CENTER)  # more parameters
+        align=pymupdf.TEXT_ALIGN_CENTER)
 
-    page.apply_redactions(images=pymupdf.PDF_REDACT_IMAGE_NONE)  # don't touch images
+    page.apply_redactions(images=pymupdf.PDF_REDACT_IMAGE_NONE)
 
 
 
     # add texts
     for rect in hits:
         rect.x1 += config["insertion"]["adjust_x1"]
-        rect.y1 += config["insertion"]["adjust_y1"]  # make rectangle a bit taller
+        rect.y1 += config["insertion"]["adjust_y1"]
         
         # Parse alignment from config
         align_map = {
