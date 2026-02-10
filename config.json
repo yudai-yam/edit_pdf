@@ -1,0 +1,27 @@
+{
+  "pdf": {
+    "input_file": "noriko.pdf",
+    "output_file": "replaced.pdf",
+    "page_number": 0
+  },
+  "font": {
+    "fontfile": "segoe_ui.ttf",
+    "fontname": "SegoeUI",
+    "fontsize": 11
+  },
+  "replacements": [
+    {
+      "find": "25",
+      "replace": "26"
+    }
+  ],
+  "redaction": {
+    "adjust_x1": 1,
+    "adjust_y1": 6.1
+  },
+  "insertion": {
+    "adjust_x1": 10,
+    "adjust_y1": 0.6,
+    "align": "LEFT"
+  }
+}
