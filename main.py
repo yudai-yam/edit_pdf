@@ -47,6 +47,7 @@ for index, disliked in enumerate(disliked_list):
             fontfile=f'fonts/{config["font"]["fontfile"]}',
             fontname=config["font"]["fontname"],
             fontsize=config["font"]["fontsize"],
+            color=config["font"]["color"],
             align=align,
         )
         print(f"Inserted text '{better_list[index]}' in rectangle {rect}, result={result}")
