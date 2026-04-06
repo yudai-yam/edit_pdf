@@ -44,6 +44,8 @@ for index, disliked in enumerate(disliked_list):
         result = page.insert_textbox(
             rect,
             better_list[index],
+            fontfile=f'fonts/{config["font"]["fontfile"]}',
+            fontname=config["font"]["fontname"],
             fontsize=config["font"]["fontsize"],
             color=config["font"]["color"],
             align=align,
