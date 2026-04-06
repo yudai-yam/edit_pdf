@@ -1,27 +1,28 @@
 {
   "pdf": {
-    "input_file": "noriko.pdf",
+    "input_file": "visa_1.pdf",
     "output_file": "replaced.pdf",
     "page_number": 0
   },
   "font": {
-    "fontfile": "segoe_ui.ttf",
-    "fontname": "SegoeUI",
-    "fontsize": 11
+    "fontfile": "SF-Pro.ttf",
+    "fontname": "SFUI",
+    "fontsize": 12,
+    "color": [0.27, 0.27, 0.27]
   },
   "replacements": [
     {
-      "find": "25",
-      "replace": "26"
+      "find": "9th October, 2024",
+      "replace": "20 Feb 2026"
     }
   ],
   "redaction": {
     "adjust_x1": 1,
-    "adjust_y1": 6.1
+    "adjust_y1": 60
   },
   "insertion": {
     "adjust_x1": 10,
-    "adjust_y1": 0.6,
+    "adjust_y1": 60,
     "align": "LEFT"
   }
 }
