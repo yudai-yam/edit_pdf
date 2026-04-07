@@ -1,28 +1,29 @@
 {
   "pdf": {
-    "input_file": "visa_1.pdf",
+    "input_file": "ufz_1.pdf",
     "output_file": "replaced.pdf",
     "page_number": 0
   },
   "font": {
-    "fontfile": "SF-Pro.ttf",
-    "fontname": "SFUI",
-    "fontsize": 12,
-    "color": [0.27, 0.27, 0.27]
+    "fontfile": "ARIAL.TTF",
+    "fontname": "arial",
+    "fontsize": 8,
+    "color": [0.17, 0.17, 0.17]
   },
   "replacements": [
     {
-      "find": "9th October, 2024",
-      "replace": "20 Feb 2026"
+      "find": "Dezember 2025",
+      "replace": "März 2026"
     }
   ],
   "redaction": {
     "adjust_x1": 1,
-    "adjust_y1": 60
+    "adjust_y1": 6
   },
   "insertion": {
     "adjust_x1": 10,
-    "adjust_y1": 60,
+    "adjust_y0": -1,
+    "adjust_y1": 2,
     "align": "LEFT"
   }
 }

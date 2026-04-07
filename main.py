@@ -31,6 +31,7 @@ for index, disliked in enumerate(disliked_list):
     # add texts
     for rect in hits:
         rect.x1 += config["insertion"]["adjust_x1"]
+        rect.y0 += config["insertion"].get("adjust_y0", 0)
         rect.y1 += config["insertion"]["adjust_y1"]
         
         # Parse alignment from config
